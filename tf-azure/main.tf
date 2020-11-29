@@ -70,7 +70,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   resource_group_name = azurerm_resource_group.rgSample.name
   location            = azurerm_resource_group.rgSample.location
   size                = "Standard_A4_v2"
-  admin_username      = "viky"
+  admin_username      = var.username
   
   network_interface_ids = [
     azurerm_network_interface.exampleNic.id,

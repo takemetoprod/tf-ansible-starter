@@ -1,5 +1,5 @@
 variable "username" {
   type        = string
-  default     = "admin"
+  default     = "adminuser"
   description = "Username of admin user on the vm"
 }
